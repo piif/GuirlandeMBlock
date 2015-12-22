@@ -33,3 +33,10 @@ Pour permettre d'interrompre l'animation en cours lors de la réception d'un ord
 Un hack à coup de longjmp permet alors d'interrompre l'animation en cours.
 
 La version complète tourne sur un Yun sur lequel un portail captif permet de choisir une animation depuis une page web qui en affiche la liste.
+
+ledStrip
+-----
+
+Le dossier ledStrip contient un mix entre la librairie de chez adafruit (Adafruit_NeoPixel) et le code inclu dans le firmware de mblock.
+La version AdaFruit ne marche pas avec un Yun alors que celle de mblock oui.
+Comme le coeur du protocole WS2812 est écrit en assembleur, j'ai pas cherché en profondeur ce qui déconnait, mais comme ça, cç marche.
